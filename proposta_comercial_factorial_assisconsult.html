@@ -304,6 +304,113 @@
             background: #27ae60;
         }
         
+        /* Responsividade para Mobile */
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                padding: 20px;
+                border-radius: 5px;
+            }
+            
+            h1 {
+                font-size: 1.5em;
+            }
+            
+            h2 {
+                font-size: 1.3em;
+            }
+            
+            h3 {
+                font-size: 1.1em;
+            }
+            
+            .plan-price {
+                font-size: 2em;
+            }
+            
+            .total-amount {
+                font-size: 1.8em;
+            }
+            
+            .plan-details {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+            
+            .detail-item {
+                padding: 10px;
+            }
+            
+            table {
+                font-size: 0.9em;
+            }
+            
+            th, td {
+                padding: 8px 10px;
+            }
+            
+            .timeline-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .timeline-date {
+                margin-bottom: 10px;
+                margin-right: 0;
+            }
+            
+            .proposal-header {
+                padding: 20px;
+            }
+            
+            .proposal-header h1 {
+                font-size: 1.5em;
+            }
+            
+            .proposal-header p {
+                font-size: 1em;
+            }
+            
+            .pricing-card,
+            .total-section,
+            .onboarding-section {
+                padding: 20px;
+            }
+            
+            .plan-name {
+                font-size: 1.5em;
+            }
+            
+            .savings-badge {
+                font-size: 0.9em;
+                padding: 5px 10px;
+            }
+            
+            /* Tabelas responsivas - scroll horizontal */
+            .comparison-table {
+                overflow-x: auto;
+                display: block;
+            }
+            
+            table {
+                min-width: 600px;
+            }
+        }
+        
+        /* Tablets */
+        @media screen and (min-width: 769px) and (max-width: 1024px) {
+            .container {
+                padding: 30px;
+            }
+            
+            .plan-details {
+                gap: 15px;
+            }
+        }
+        
         @media print {
             body {
                 background: white;
